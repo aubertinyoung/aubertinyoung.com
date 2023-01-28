@@ -22,7 +22,7 @@ export const NavigationBar = () => {
     >
       <div className="navbar m-0 p-0 justify-content-center align-items-center">
         <Nav className="justify-content-between align-items-center w-100">
-          <div className="w-25 d-flex align-items-center justify-content-around">
+          <div className="w-25 d-flex align-items-center justify-content-start">
             <NavLink to="/about" className="nav-link">
               About
             </NavLink>
