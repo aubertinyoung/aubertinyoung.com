@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import profilePhotoOn from "../assets/images/macgregor-gs3.jpg";
-import profilePhotoOff from "../assets/images/macgregor-gs2.jpg";
 import { HiArrowRight } from "react-icons/hi";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const HomePage = () => {
   const [isHovering, setIsHovering] = useState(false);
@@ -13,7 +12,7 @@ export const HomePage = () => {
           <img
             // onMouseOver={() => setIsHovering(true)}
             onMouseOut={() => setIsHovering(false)}
-            src={isHovering ? profilePhotoOff : profilePhotoOn}
+            src={profilePhotoOn}
             className="home-image"
             style={{
               maxHeight: "100%",
@@ -29,13 +28,13 @@ export const HomePage = () => {
               biodiversity data management and wildlife stewardship.
             </p>
             <div className="d-flex justify-content-end">
-              <Link
+              <NavLink
                 to="/about"
                 style={{ textDecoration: "none" }}
                 className="text-blue"
               >
                 Let me tell you more <HiArrowRight />
-              </Link>
+              </NavLink>
             </div>
           </div>
         </div>

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import aboutPhoto from "../assets/images/about.jpg";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { Container } from "react-bootstrap";

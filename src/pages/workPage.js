@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { FiTool } from "react-icons/fi";
-import caribouImage from "../assets/images/caribou2.jpg";
 
 export const WorkPage = () => {
   const [state, setState] = useState({ page: "present" });
@@ -149,10 +148,7 @@ export const WorkPage = () => {
                   machine learning to identify plant species from their traits,
                   which helped catalyze my shift towards programming.
                 </p>
-                <img
-                  //   src={caribouImage}
-                  style={{ maxWidth: "100%", marginTop: "10px" }}
-                />
+                <img style={{ maxWidth: "100%", marginTop: "10px" }} />
               </section>
             ) : (
               <>

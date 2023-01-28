@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Nav, Navbar, Container } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
 import {
   BsGithub,
   BsTwitter,
@@ -7,9 +7,8 @@ import {
   BsCheck2Square,
 } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
-import styled from "styled-components";
-import { NavLink, Link } from "react-router-dom";
-import { BiCopy, BiCopyAlt } from "react-icons/bi";
+import { NavLink } from "react-router-dom";
+import { BiCopyAlt } from "react-icons/bi";
 
 export const NavigationBar = () => {
   const [showEmail, setShowEmail] = useState(false);
@@ -17,8 +16,6 @@ export const NavigationBar = () => {
   const email = "macgregoray@gmail.com";
 
   return (
-    // <div style={{ width: "100vw", height: "60px" }}>
-    //   <div className="h-100 w-100 bg-info">
     <Navbar
       style={{ height: "50px" }}
       className="w-100 p-0 m-0 d-flex justify-content-center align-items-center bg-light"
@@ -32,7 +29,6 @@ export const NavigationBar = () => {
             <NavLink to="/work" className="nav-link">
               Work
             </NavLink>
-            <NavLink className="nav-link"></NavLink>
           </div>
           <NavLink
             to="/"
@@ -143,8 +139,6 @@ export const NavigationBar = () => {
         </Nav>
       </div>
     </Navbar>
-
-    // </div>
   );
 };
 
