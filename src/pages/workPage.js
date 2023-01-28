@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { FiTool } from "react-icons/fi";
 
@@ -16,45 +15,57 @@ export const WorkPage = () => {
             style={{ minHeight: "30px" }}
             className="main-section d-flex justify-content-around"
           >
-            <NavLink
+            <div
               className={
                 state.page == "past" ? "nav-link w-25" : "nav-link w-25"
               }
               style={
                 state.page == "past"
-                  ? { borderBottom: "2px solid grey", textAlign: "center" }
-                  : { color: "#A9A9A9", textAlign: "center" }
+                  ? {
+                      borderBottom: "2px solid grey",
+                      textAlign: "center",
+                      cursor: "pointer",
+                    }
+                  : { color: "#A9A9A9", textAlign: "center", cursor: "pointer" }
               }
               onClick={() => setState({ page: "past" })}
             >
               Past
-            </NavLink>
-            <NavLink
+            </div>
+            <div
               className={
                 state.page == "present" ? "nav-link w-25" : "nav-link w-25"
               }
               style={
                 state.page == "present"
-                  ? { borderBottom: "2px solid grey", textAlign: "center" }
-                  : { color: "#A9A9A9", textAlign: "center" }
+                  ? {
+                      borderBottom: "2px solid grey",
+                      textAlign: "center",
+                      cursor: "pointer",
+                    }
+                  : { color: "#A9A9A9", textAlign: "center", cursor: "pointer" }
               }
               onClick={() => setState({ page: "present" })}
             >
               Present
-            </NavLink>
-            <NavLink
+            </div>
+            <div
               className={
                 state.page == "future" ? "nav-link w-25" : "nav-link w-25"
               }
               style={
                 state.page == "future"
-                  ? { borderBottom: "2px solid grey", textAlign: "center" }
-                  : { color: "#A9A9A9", textAlign: "center" }
+                  ? {
+                      borderBottom: "2px solid grey",
+                      textAlign: "center",
+                      cursor: "pointer",
+                    }
+                  : { color: "#A9A9A9", textAlign: "center", cursor: "pointer" }
               }
               onClick={() => setState({ page: "future" })}
             >
               Future
-            </NavLink>
+            </div>
           </div>
           <div className="align-items-start main-section text-muted">
             {state.page == "present" ? (
@@ -148,7 +159,6 @@ export const WorkPage = () => {
                   machine learning to identify plant species from their traits,
                   which helped catalyze my shift towards programming.
                 </p>
-                <img style={{ maxWidth: "100%", marginTop: "10px" }} />
               </section>
             ) : (
               <>
@@ -182,7 +192,7 @@ export const WorkPage = () => {
                     className="d-flex justify-content-start align-items-start flex-column mt-2"
                     onMouseOut={() => setShowEmail(false)}
                   >
-                    <Link
+                    <div
                       style={{ textDecoration: "none" }}
                       className="text-blue m-0 p-0"
                       onMouseOver={() => setShowEmail(true)}
@@ -190,7 +200,7 @@ export const WorkPage = () => {
                       <p style={{ textAlign: "center" }} className="m-0 p-0">
                         Have an opportunity? Let's chat about it!
                       </p>
-                    </Link>
+                    </div>
                   </div>
                 </section>
               </>

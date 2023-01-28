@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import { Container } from "react-bootstrap";
 
 export const AboutPage = () => {
   const [state, setState] = useState({ page: "truths" });
@@ -13,32 +11,40 @@ export const AboutPage = () => {
             style={{ minHeight: "30px" }}
             className="w-50 d-flex justify-content-around"
           >
-            <NavLink
+            <div
               className={
                 state.page == "truths" ? "nav-link w-25" : "nav-link w-25"
               }
               style={
                 state.page == "truths"
-                  ? { borderBottom: "2px solid grey", textAlign: "center" }
-                  : { color: "#A9A9A9", textAlign: "center" }
+                  ? {
+                      borderBottom: "2px solid grey",
+                      textAlign: "center",
+                      cursor: "pointer",
+                    }
+                  : { color: "#A9A9A9", textAlign: "center", cursor: "pointer" }
               }
               onClick={() => setState({ page: "truths" })}
             >
               Truths
-            </NavLink>
-            <NavLink
+            </div>
+            <div
               className={
                 state.page == "beliefs" ? "nav-link w-25" : "nav-link w-25"
               }
               style={
                 state.page == "beliefs"
-                  ? { borderBottom: "2px solid grey", textAlign: "center" }
-                  : { color: "#A9A9A9", textAlign: "center" }
+                  ? {
+                      borderBottom: "2px solid grey",
+                      textAlign: "center",
+                      cursor: "pointer",
+                    }
+                  : { color: "#A9A9A9", textAlign: "center", cursor: "pointer" }
               }
               onClick={() => setState({ page: "beliefs" })}
             >
               Beliefs
-            </NavLink>
+            </div>
           </div>
           <div className="align-items-start main-section text-muted">
             {state.page == "truths" ? (

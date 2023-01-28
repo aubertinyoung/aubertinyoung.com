@@ -10,10 +10,10 @@ export const HomePage = () => {
       <div style={{ height: "400px" }} className="main-section m-0 p-0">
         <div className="w-100 h-100 p-2 m-0 align-items-center d-flex flex-column">
           <img
-            // onMouseOver={() => setIsHovering(true)}
             onMouseOut={() => setIsHovering(false)}
             src={profilePhotoOn}
             className="home-image"
+            alt="Headshot of Macgregor Aubertin-Young"
             style={{
               maxHeight: "100%",
               borderRadius: "50%",
@@ -28,13 +28,13 @@ export const HomePage = () => {
               biodiversity data management and wildlife stewardship.
             </p>
             <div className="d-flex justify-content-end">
-              <NavLink
+              <div
                 to="/about"
-                style={{ textDecoration: "none" }}
+                style={{ textDecoration: "none", cursor: "pointer" }}
                 className="text-blue"
               >
                 Let me tell you more <HiArrowRight />
-              </NavLink>
+              </div>
             </div>
           </div>
         </div>
