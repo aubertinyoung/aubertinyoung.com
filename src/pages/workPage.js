@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FiTool } from "react-icons/fi";
+import ButtonMailto from "../components/mailTo";
 
 export const WorkPage = () => {
   const [state, setState] = useState({ page: "present" });
@@ -177,7 +178,7 @@ export const WorkPage = () => {
                   <ul>
                     <li>Biodiversity conservation & restoration</li>
                     <li>Earth observation technologies</li>
-                    <li>Renewable energy & industry transformation</li>
+                    <li>Renewable energy & industrial transformations</li>
                     <li>Sustainable economics & fintech</li>
                   </ul>
                   <p>and work with</p>
@@ -197,9 +198,12 @@ export const WorkPage = () => {
                       className="text-blue m-0 p-0"
                       onMouseOver={() => setShowEmail(true)}
                     >
-                      <p style={{ textAlign: "center" }} className="m-0 p-0">
-                        Have an opportunity? Let's chat about it!
-                      </p>
+                      <ButtonMailto
+                        address="mailto:no-reply@example.com"
+                        label="Have an opportunity? Let's chat about it!"
+                        style={{ textAlign: "center" }}
+                        className="m-0 p-0"
+                      />
                     </div>
                   </div>
                 </section>

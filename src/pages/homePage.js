@@ -28,13 +28,13 @@ export const HomePage = () => {
               biodiversity data management and wildlife stewardship.
             </p>
             <div className="d-flex justify-content-end">
-              <div
+              <NavLink
                 to="/about"
+                className="nav-link"
                 style={{ textDecoration: "none", cursor: "pointer" }}
-                className="text-blue"
               >
                 Let me tell you more <HiArrowRight />
-              </div>
+              </NavLink>
             </div>
           </div>
         </div>

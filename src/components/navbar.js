@@ -34,15 +34,20 @@ export const NavigationBar = () => {
             to="/"
             className="name flex-fill justify-content-center nav-link"
           >
-            <h6
+            <div
+              id="name"
               className="m-0 p-0"
-              style={{ fontFamily: "Lato", textAlign: "center" }}
+              style={{
+                fontFamily: "Lato",
+                textAlign: "center",
+                lineHeight: "1rem",
+              }}
             >
               <span style={{ fontFamily: "Lato Regular" }}>MACGREGOR</span>{" "}
               <span style={{ display: "inline-block", fontFamily: "Lato" }}>
                 AUBERTIN-YOUNG
               </span>
-            </h6>
+            </div>
           </NavLink>
           <div className="w-25 m-0 d-flex justify-content-end">
             <div className="d-flex justify-content-center">

@@ -36,9 +36,7 @@ section {
   }
   .navbar {
     width: 90%;
-  }
-  .name {
-    display: none;
+    font-size: 0.9rem;
   }
 }
 
