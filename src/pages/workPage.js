@@ -18,10 +18,10 @@ export const WorkPage = () => {
           >
             <div
               className={
-                state.page == "past" ? "nav-link w-25" : "nav-link w-25"
+                state.page === "past" ? "nav-link w-25" : "nav-link w-25"
               }
               style={
-                state.page == "past"
+                state.page === "past"
                   ? {
                       borderBottom: "2px solid grey",
                       textAlign: "center",
@@ -35,10 +35,10 @@ export const WorkPage = () => {
             </div>
             <div
               className={
-                state.page == "present" ? "nav-link w-25" : "nav-link w-25"
+                state.page === "present" ? "nav-link w-25" : "nav-link w-25"
               }
               style={
-                state.page == "present"
+                state.page === "present"
                   ? {
                       borderBottom: "2px solid grey",
                       textAlign: "center",
@@ -52,10 +52,10 @@ export const WorkPage = () => {
             </div>
             <div
               className={
-                state.page == "future" ? "nav-link w-25" : "nav-link w-25"
+                state.page === "future" ? "nav-link w-25" : "nav-link w-25"
               }
               style={
-                state.page == "future"
+                state.page === "future"
                   ? {
                       borderBottom: "2px solid grey",
                       textAlign: "center",
@@ -69,37 +69,23 @@ export const WorkPage = () => {
             </div>
           </div>
           <div className="align-items-start main-section text-muted">
-            {state.page == "present" ? (
+            {state.page === "present" ? (
               <>
                 <section>
                   <p>
-                    I'm an Ecosystem Information Technologist for the Government
+                    I'm a Wildlife Information Specialist with the Government
                     of British Columbia where I do a few things to modernize the
                     natural resource sector:
                   </p>
                   <ul style={{ fontWeight: "500" }}>
                     <li>Product ownership for two enterprise applications</li>
-                    <li>Database modelling & administration</li>
-                    <li>UI/UX design</li>
-                    <li>Data quality assurance</li>
-                    <li>R package & RShiny app development</li>
-                    <li>Client & leadership engagement</li>
-                  </ul>
-                </section>
-                <section>
-                  <p>
-                    I also do software development and data science on the side.
-                    I'm currently building Terraplotta, a custom e-commerce
-                    platform through which I will sell artistic species
-                    distribution maps that I develop with Python and 3D
-                    modelling software, and researching urban deer population
-                    trajectories. Across projects, I regularly do:
-                  </p>
-                  <ul>
                     <li>Full-stack development</li>
-                    <li>Satellite imagery processing & analysis</li>
-                    <li>Species distribution modelling</li>
-                    <li>Marketing & SEO optimization</li>
+                    <li>Database design & development</li>
+                    <li>UI/UX design</li>
+                    <li>R package & RShiny app development</li>
+                    <li>Development of data standards</li>
+                    <li>Client & leadership engagement</li>
+                    <li>Project management</li>
                   </ul>
                 </section>
                 <div
@@ -129,7 +115,7 @@ export const WorkPage = () => {
                   <></>
                 )}
               </>
-            ) : state.page == "past" ? (
+            ) : state.page === "past" ? (
               <section>
                 <p>
                   I received my Master's of Environmental Studies from the
@@ -149,7 +135,7 @@ export const WorkPage = () => {
                 </ul>
                 <p>
                   Prior to my Master's, I spent the summers doing research and
-                  the rest of year learning how to do better research. My first
+                  the rest of the year learning how to do better research. My first
                   biology job was monitoring and banding an endangered songbird
                   species in British Columbia's desert as a field technician. I
                   did that for a couple summers and then continued with
@@ -193,18 +179,7 @@ export const WorkPage = () => {
                     className="d-flex justify-content-start align-items-start flex-column mt-2"
                     onMouseOut={() => setShowEmail(false)}
                   >
-                    <div
-                      style={{ textDecoration: "none" }}
-                      className="text-blue m-0 p-0"
-                      onMouseOver={() => setShowEmail(true)}
-                    >
-                      <ButtonMailto
-                        address="mailto:no-reply@example.com"
-                        label="Have an opportunity? Let's chat about it!"
-                        style={{ textAlign: "center" }}
-                        className="m-0 p-0"
-                      />
-                    </div>
+                      <div>Have an opportunity? I'd love to talk about it.</div>
                   </div>
                 </section>
               </>

@@ -13,10 +13,10 @@ export const AboutPage = () => {
           >
             <div
               className={
-                state.page == "truths" ? "nav-link w-25" : "nav-link w-25"
+                state.page === "truths" ? "nav-link w-25" : "nav-link w-25"
               }
               style={
-                state.page == "truths"
+                state.page === "truths"
                   ? {
                       borderBottom: "2px solid grey",
                       textAlign: "center",
@@ -30,10 +30,10 @@ export const AboutPage = () => {
             </div>
             <div
               className={
-                state.page == "beliefs" ? "nav-link w-25" : "nav-link w-25"
+                state.page === "beliefs" ? "nav-link w-25" : "nav-link w-25"
               }
               style={
-                state.page == "beliefs"
+                state.page === "beliefs"
                   ? {
                       borderBottom: "2px solid grey",
                       textAlign: "center",
@@ -47,15 +47,14 @@ export const AboutPage = () => {
             </div>
           </div>
           <div className="align-items-start main-section text-muted">
-            {state.page == "truths" ? (
+            {state.page === "truths" ? (
               <>
                 <section>
                   <p>
                     I grew up in Vancouver, BC, Canada, where I studied ecology
                     and evolution before moving a boat-ride away to study
                     wildlife biology in Victoria. I researched wildlife
-                    distributions and community dynamics, especially of mammals
-                    in industrialized landscapes in western Canada.
+                    distributions and community dynamics in industrialized landscapes.
                   </p>
                   <p>
                     I live in a tiny house, I go to sleep thinking about coffee,
@@ -65,7 +64,7 @@ export const AboutPage = () => {
                   <p>
                     I feel most fulfilled when I'm learning, and I spend a lot
                     of time coding and learning new tech. I also spend time rock
-                    climbing and enjoying craft beer, ideally in the order.
+                    climbing, mountain biking, enjoying craft beer.
                   </p>
                 </section>
                 <section></section>
@@ -74,8 +73,7 @@ export const AboutPage = () => {
               <section>
                 <p>
                   I believe that we will adapt to global change, but not without
-                  hardship. I hope that my contributions to the world will at
-                  least improve the lives of others while protecting nature.
+                  hardship. I hope that my contributions to the world will improve the lives of others and benefit nature.
                 </p>
                 <p>
                   I believe that earth observation satellites are one of the
