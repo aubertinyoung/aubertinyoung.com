@@ -22,10 +22,9 @@ export const HomePage = () => {
           <div className="mt-4 align-items-start main-section">
             <p className="text-muted">
               <span className="text-dark">Hi, I'm Macgregor.</span> I'm an
-              ecologist turned programmer and product developer from Victoria,
-              BC, Canada. Once a wildlife biologist out in the field, I now
-              steer software development for enterprise applications to support
-              biodiversity data management and wildlife stewardship.
+              ecologist turned programmer and product manager from Victoria, BC,
+              Canada. I steer software development for enterprise applications
+              to support biodiversity data management and wildlife stewardship.
             </p>
             <div className="d-flex justify-content-end">
               <NavLink
@@ -33,7 +32,7 @@ export const HomePage = () => {
                 className="nav-link"
                 style={{ textDecoration: "none", cursor: "pointer" }}
               >
-                Let me tell you more <HiArrowRight />
+                More about me <HiArrowRight />
               </NavLink>
             </div>
           </div>

@@ -26,7 +26,7 @@ export const AboutPage = () => {
               }
               onClick={() => setState({ page: "truths" })}
             >
-              Truths
+              Facts
             </div>
             <div
               className={
@@ -43,7 +43,7 @@ export const AboutPage = () => {
               }
               onClick={() => setState({ page: "beliefs" })}
             >
-              Beliefs
+              Thoughts
             </div>
           </div>
           <div className="align-items-start main-section text-muted">
@@ -54,17 +54,19 @@ export const AboutPage = () => {
                     I grew up in Vancouver, BC, Canada, where I studied ecology
                     and evolution before moving a boat-ride away to study
                     wildlife biology in Victoria. I researched wildlife
-                    distributions and community dynamics in industrialized landscapes.
+                    distributions and community dynamics in industrialized
+                    landscapes.
                   </p>
                   <p>
                     I live in a tiny house, I go to sleep thinking about coffee,
-                    and I would love to get a dog&mdash;if my house wasn't 360ft
+                    and I would love to get a dog&mdash;if my house wasn't 250ft
                     <sup>2</sup>.
                   </p>
                   <p>
                     I feel most fulfilled when I'm learning, and I spend a lot
-                    of time coding and learning new tech. I also spend time rock
-                    climbing, mountain biking, enjoying craft beer.
+                    of time coding and learning new technology. I also spend
+                    time rock climbing, mountain biking, and enjoying craft
+                    beer.
                   </p>
                 </section>
                 <section></section>
@@ -72,24 +74,23 @@ export const AboutPage = () => {
             ) : (
               <section>
                 <p>
-                  I believe that we will adapt to global change, but not without
-                  hardship. I hope that my contributions to the world will improve the lives of others and benefit nature.
+                  I think a lot about environmental challenges and adapting to
+                  global change. I believe that we will adapt, but not without
+                  hardship. I hope that my contributions to the world will
+                  benefit people and communities while conserving nature.
                 </p>
                 <p>
-                  I believe that earth observation satellites are one of the
-                  coolest inventions ever, and I'm optimistic that the next
-                  revolutionary use of satellite imagery will be to develop
-                  self-improving global species distribution models that anyone
-                  can use. You will be able to point to an area on a map and see
-                  which species live there, all while drinking coffee at home.
+                  I also believe that earth observation satellites are one of
+                  the coolest inventions ever, and I'm keen to use satellite
+                  data to build a catalog of global species distribution models.
+                  This would be my startup if I ever made one.
                 </p>
                 <p>
-                  I believe that biodiversity should be more prominent when
-                  discussing climate change. The world values reforestation as a
-                  climate change solution, but we haven't yet considered the
-                  necessity of biodiversity in enabling reforestation. We can
-                  plant billions of trees but we need whole ecosystems to
-                  support healthy forests.
+                  Relatedly, I think that biodiversity should be more prominent
+                  in discussions about climate change. The world has come to
+                  value reforestation as a climate change solution, but we need
+                  biodiversity for newly planted trees to grow and persist. We
+                  need whole ecosystems for a healthy planet.
                 </p>
               </section>
             )}

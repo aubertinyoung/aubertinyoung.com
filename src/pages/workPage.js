@@ -73,19 +73,18 @@ export const WorkPage = () => {
               <>
                 <section>
                   <p>
-                    I'm a Wildlife Information Specialist with the Government
-                    of British Columbia where I do a few things to modernize the
+                    I'm a Senior Application Specialist for the Government of
+                    British Columbia where I do a few things to modernize the
                     natural resource sector:
                   </p>
                   <ul style={{ fontWeight: "500" }}>
-                    <li>Product ownership for two enterprise applications</li>
+                    <li>Product management of BiodiversityHub BC</li>
                     <li>Full-stack development</li>
                     <li>Database design & development</li>
                     <li>UI/UX design</li>
                     <li>R package & RShiny app development</li>
                     <li>Development of data standards</li>
                     <li>Client & leadership engagement</li>
-                    <li>Project management</li>
                   </ul>
                 </section>
                 <div
@@ -98,10 +97,7 @@ export const WorkPage = () => {
                 </div>
                 {showToolkit ? (
                   <section>
-                    <p>
-                      I use these tools most often, but I'll adopt whatever tool
-                      is best for the job at hand.
-                    </p>
+                    <p>These are some of my favourite tools:</p>
                     <ul>
                       <li>React, Node.js, Figma</li>
                       <li>NumPy, Pandas, GDAL</li>
@@ -135,11 +131,11 @@ export const WorkPage = () => {
                 </ul>
                 <p>
                   Prior to my Master's, I spent the summers doing research and
-                  the rest of the year learning how to do better research. My first
-                  biology job was monitoring and banding an endangered songbird
-                  species in British Columbia's desert as a field technician. I
-                  did that for a couple summers and then continued with
-                  bird-related research throughout my biology degree.
+                  the rest of the year learning how to do research better. My
+                  first biology job was monitoring and banding an endangered
+                  songbird species in south-central British Columbia as a field
+                  technician. I did that for a couple summers and then continued
+                  with bird-related research throughout my biology degree.
                 </p>
                 <p>
                   My most recent biology job prior to my Master's was using
@@ -163,7 +159,7 @@ export const WorkPage = () => {
                   <p>and advance</p>
                   <ul>
                     <li>Biodiversity conservation & restoration</li>
-                    <li>Earth observation technologies</li>
+                    <li>Earth observation technology</li>
                     <li>Renewable energy & industrial transformations</li>
                     <li>Sustainable economics & fintech</li>
                   </ul>
@@ -179,7 +175,7 @@ export const WorkPage = () => {
                     className="d-flex justify-content-start align-items-start flex-column mt-2"
                     onMouseOut={() => setShowEmail(false)}
                   >
-                      <div>Have an opportunity? I'd love to talk about it.</div>
+                    <div>Have an opportunity? I'd love to talk about it.</div>
                   </div>
                 </section>
               </>
